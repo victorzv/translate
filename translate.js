@@ -47,11 +47,20 @@ async function translate(word){
 
   let result = await getWordTranslate(options);
 
-  console.log(result);
+  var res = '';
+
+  let trsl = await JSON.parse(result, function(key, value) {
+    if (key == 'Translation') {
+        return value;
+    }
+    return value;
+  });
+
+  console.log(trsl.Translation.Translation);
 
 }
 
-translate('price');
+translate('thanks');
 
 /*
 
