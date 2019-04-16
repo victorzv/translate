@@ -1,0 +1,13 @@
+﻿en: Translations of frayed
+
+adjective
+Frequency
+поношенный
+shabby, ragged, old, frayed, bare, eldest
+
+en: Translations of description
+
+none
+Frequency
+описание
+note, list, text
