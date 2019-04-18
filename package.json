@@ -1,7 +1,7 @@
 {
-  "name": "1",
+  "name": "translate",
   "version": "1.0.0",
-  "description": "",
+  "description": "utility to make dictionary from file",
   "main": "index.js",
   "dependencies": {
     "@k3rn31p4nic/google-translate-api": "github:k3rn31p4nic/google-translate-api",
@@ -13,6 +13,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "victorzv",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorzv/translate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorzv/translate/issues"
+  },
+  "homepage": "https://github.com/victorzv/translate#readme"
 }
