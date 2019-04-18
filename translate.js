@@ -31,7 +31,7 @@ function getWordTranslate(options){
   });
 }
 
-async function translate(word){
+exports.translateFunction = async function(word){
 
   let key = await getAuthorizateKey();
 
@@ -56,11 +56,11 @@ async function translate(word){
     return value;
   });
 
-  console.log(trsl.Translation.Translation);
+  return trsl.Translation.Translation;
 
 }
 
-translate('thanks');
+//translate('inheritance');
 
 /*
 

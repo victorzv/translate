@@ -5,7 +5,18 @@
 // });
 
 var dt = require('./utilWords.js');
+var translate = require('./translate.js');
 
-var unique = dt.getDiffWords('I love, my dog, dog are, great');
+var words = dt.WordsFrom('I love, my dog, dog are, great');
 
-console.log(unique);
+var knownWords = ['I', 'great'];
+
+var unique = dt.getDiffWords(words, knownWords);
+
+for(let i = 0; i < unique.length; i++){
+  let translateWord = translate.translateFunction(unique[i]);
+  translateWord.then(function(value){
+    console.log(unique[i] + ' = ' + value);
+  });
+
+}
