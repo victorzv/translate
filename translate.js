@@ -31,7 +31,7 @@ function getWordTranslate(options){
   });
 }
 
-exports.translateFunction = async function(word){
+export async function translateFunction(word){
 
   let key = await getAuthorizateKey();
 

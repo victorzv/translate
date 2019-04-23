@@ -1,12 +1,12 @@
 
-exports.WordsFrom = function(text){
+export function WordsFrom(text){
   var stripped = text.replace(/,/g, '');
   return stripped.split(' ').filter(function(item, index, allItems){
     return index == allItems.indexOf(item);
   });
 };
 
-exports.getDiffWords = function(newArray, knownArray){
+export function getDiffWords(newArray, knownArray){
     var a = [], diff = [];
 
     for (var i = 0; i < newArray.length; i++) {
